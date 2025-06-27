@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>XVAUnivers</title>
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: radial-gradient(circle, #0b002b, #0f0040);
+      font-family: 'Press Start 2P', monospace;
+      color: #ff00ff;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+    }
+
+    nav {
+      background: rgba(0, 0, 0, 0.8);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 0 10px #ff00ff;
+    }
+
+    nav a {
+      color: #00ffff;
+      margin: 0 20px;
+      text-decoration: none;
+      font-size: 0.8rem;
+      text-shadow: 0 0 5px #ff00ff;
+    }
+
+    nav a:hover {
+      color: #ff00ff;
+      text-shadow: 0 0 10px #00ffff;
+    }
+
+    header {
+      text-align: center;
+      padding: 60px 20px;
+      font-size: 2.5rem;
+      color: #ff00ff;
+      letter-spacing: 10px;
+      text-shadow: 0 0 5px #ff00ff, 0 0 15px #ff00ff;
+    }
+
+    .project {
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      padding: 40px;
+      margin: 30px auto;
+      width: 90%;
+      max-width: 700px;
+      border: 4px double #00ffff;
+      box-shadow: 0 0 20px #00ffff, inset 0 0 15px #ff00ff;
+      backdrop-filter: brightness(0.5);
+    }
+
+    .project h2,
+    .project audio,
+    .project .equalizer,
+    .project a,
+    .project form {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 10px;
+      display: block;
+      border-radius: 6px;
+      margin-bottom: 8px;
+    }
+
+    h2 {
+      font-size: 1.3rem;
+      color: #00ffff;
+      text-shadow: 0 0 5px #ff00ff;
+    }
+
+    audio {
+      width: 100%;
+    }
+
+    .download-btn,
+    .buy-btn {
+      background: #00ffff;
+      color: #0b002b;
+      padding: 12px;
+      text-decoration: none;
+      font-weight: bold;
+      margin: 10px 10px 0 0;
+      display: inline-block;
+      border: 3px double #ff00ff;
+      font-size: 0.8rem;
+      text-shadow: 1px 1px #ff00ff;
+      border-radius: 4px;
+    }
+
+    .download-btn:hover,
+    .buy-btn:hover {
+      background: #ff00ff;
+      color: #00ffff;
+      border-color: #00ffff;
+      box-shadow: 0 0 15px #ff00ff;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="#">Accueil</a>
+    <a href="#projets">Projets</a>
+    <a href="#achats">Boutique</a>
+    <a href="#contact">Contact</a>
+    <a href="https://www.instagram.com/xvaunivers" target="_blank">Instagram</a>
+  </nav>
+
+  <header>XVAUnivers</header>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/8/86/Chrono_Trigger.jpg');">
+    <h2>Projet 29</h2>
+    <audio controls>
+      <source src="Projet 29.m4a" type="audio/mp4">
+    </audio>
+    <a class="download-btn" href="Projet 29.m4a" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="Projet 29 XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/6/6b/SanAndreas_Box.jpg');">
+    <h2>Projet 165</h2>
+    <audio controls>
+      <source src="Projet 165.aif" type="audio/aiff">
+    </audio>
+    <a class="download-btn" href="Projet 165.aif" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="Projet 165 XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/d/d2/Pac-Man_cover.png');">
+    <h2>Prod Piano Haha</h2>
+    <audio controls>
+      <source src="prod piano haha.wav" type="audio/wav">
+    </audio>
+    <a class="download-btn" href="prod piano haha.wav" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="Prod Piano Haha XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/0/0f/Need_for_Speed_Most_Wanted_cover.jpg');">
+    <h2>CUBAN POL</h2>
+    <audio controls>
+      <source src="CUBAN POL.wav" type="audio/wav">
+    </audio>
+    <a class="download-btn" href="CUBAN POL.wav" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="CUBAN POL XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/e/e1/Metal_Slug_3_cover.png');">
+    <h2>Projet 145</h2>
+    <audio controls>
+      <source src="Projet 145.aif" type="audio/aiff">
+    </audio>
+    <a class="download-btn" href="Projet 145.aif" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="Projet 145 XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/a/a2/Street_Fighter_II_cover.jpg');">
+    <h2>Projet 14</h2>
+    <audio controls>
+      <source src="Projet 14.m4a" type="audio/mp4">
+    </audio>
+    <a class="download-btn" href="Projet 14.m4a" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="Projet 14 XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+
+  <div class="project" style="background-image: url('https://upload.wikimedia.org/wikipedia/en/9/9b/Tony_Hawks_Pro_Skater_2_cover.jpg');">
+    <h2>prod qui perce</h2>
+    <audio controls>
+      <source src="prod qui perce.aif" type="audio/aiff">
+    </audio>
+    <a class="download-btn" href="prod qui perce.aif" download>Télécharger</a>
+    <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_blank">
+      <input type="hidden" name="cmd" value="_xclick">
+      <input type="hidden" name="business" value="votre-email@paypal.com">
+      <input type="hidden" name="item_name" value="prod qui perce XVAUnivers">
+      <input type="hidden" name="amount" value="5.00">
+      <input type="hidden" name="currency_code" value="EUR">
+      <button class="buy-btn" type="submit">Acheter 5€</button>
+    </form>
+  </div>
+</body>
+</html>
